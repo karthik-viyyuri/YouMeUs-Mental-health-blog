@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mental Health Blog Design System - Calming & Professional */
+
+@layer base {
+  :root {
+    /* Base colors - soft, calming palette */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
+
+    /* Cards with subtle warmth */
+    --card: 210 25% 97%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 210 25% 97%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Primary - calming teal for mental wellness */
+    --primary: 175 60% 45%;
+    --primary-foreground: 210 20% 98%;
+    --primary-soft: 175 40% 85%;
+
+    /* Secondary - warm sage green */
+    --secondary: 145 25% 85%;
+    --secondary-foreground: 145 30% 25%;
+
+    /* Muted - soft neutral */
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 55%;
+
+    /* Accent - gentle lavender */
+    --accent: 255 25% 88%;
+    --accent-foreground: 255 30% 30%;
+
+    /* Healing colors */
+    --healing-blue: 200 70% 75%;
+    --healing-green: 155 50% 70%;
+    --healing-purple: 270 40% 80%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 210 20% 87%;
+    --input: 210 20% 90%;
+    --ring: 175 60% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for visual appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--healing-blue)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--healing-green)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--healing-purple) / 0.1));
+
+    /* Shadows for depth */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 2px 10px -1px hsl(var(--primary) / 0.08);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
